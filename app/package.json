@@ -1,15 +1,21 @@
 {
-  "name": "holst-na-zakaz",
+  "name": "gulp-php-pug-sass-tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npx gulp serve",
+    "servePHP": "npx gulp servePHP",
+    "build": "npx gulp build",
+    "buildPHP": "npx gulp buildPHP",
+    "clear": "npx gulp clear",
+    "watch": "npx gulp watch",
+    "watchPHP": "npx gulp watchPHP"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.3.1",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
@@ -24,6 +30,7 @@
     "postcss-csso": "^5.0.1",
     "postcss-import": "^14.0.2",
     "sass": "^1.38.0",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.7",
+    "gulp-if": "^3.0.0"
   }
 }

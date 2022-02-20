@@ -1,0 +1,12 @@
+extends parts/layout.pug
+block variables
+  - var TITLE = 'First Pug Document'
+  - var BODY_CLASSES = 'bg-blue-100 h-screen flex justify-center'
+
+block content
+  . 
+    <?php 
+      include 'helpers.php';
+    ?>
+
+  h1.text-5xl.self-center.text-blue-900 <?php hw(); ?>
