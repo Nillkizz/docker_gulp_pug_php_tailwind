@@ -1,8 +1,6 @@
 FROM node
 WORKDIR /app
 
-# RUN mkdir /app && cd /app
-COPY ./ /app
+RUN apt-get -y update && apt-get -y install jq && apt-get clean
 
-# RUN npm install --global yarn
-RUN ls && yarn install
+ENTRYPOINT ["sh", "run.sh"]

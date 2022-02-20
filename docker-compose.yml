@@ -21,4 +21,6 @@ services:
       - 3001:3001
     volumes:
       - ./app/:/app/
-    command: yarn run servePHP
+    environment:
+      - IS_PROD=0
+    command: servePHP
